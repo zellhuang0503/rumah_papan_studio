@@ -30,7 +30,13 @@ export default defineType({
                     { name: 'title', type: 'string', title: '標題' },
                     { name: 'body', type: 'text', title: '內文', rows: 3 },
                     { name: 'bubbleText', type: 'string', title: '氣泡按鈕文字' },
-                    { name: 'isLarge', type: 'boolean', title: '大尺寸氣泡?', initialValue: false }
+                    { name: 'isLarge', type: 'boolean', title: '大尺寸氣泡?', initialValue: false },
+                    {
+                        name: 'image',
+                        title: '背景圖片',
+                        type: 'image',
+                        options: { hotspot: true }
+                    }
                 ],
                 preview: {
                     select: {
