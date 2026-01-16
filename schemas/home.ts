@@ -20,6 +20,27 @@ export default defineType({
             },
         },
         {
+            name: 'heroBubbles',
+            title: 'Hero區塊氣泡內容',
+            type: 'array',
+            of: [{
+                type: 'object',
+                fields: [
+                    { name: 'key', type: 'string', title: '識別碼(ID)', description: '例如: about, bkt' },
+                    { name: 'title', type: 'string', title: '標題' },
+                    { name: 'body', type: 'text', title: '內文', rows: 3 },
+                    { name: 'bubbleText', type: 'string', title: '氣泡按鈕文字' },
+                    { name: 'isLarge', type: 'boolean', title: '大尺寸氣泡?', initialValue: false }
+                ],
+                preview: {
+                    select: {
+                        title: 'bubbleText',
+                        subtitle: 'title'
+                    }
+                }
+            }]
+        },
+        {
             name: 'description',
             title: '描述',
             type: 'text',
