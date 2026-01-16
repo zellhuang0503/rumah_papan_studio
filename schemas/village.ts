@@ -203,4 +203,12 @@ export default defineType({
             ]
         }
     ],
+    preview: {
+        prepare() {
+            return {
+                title: '村落頁面內容設定',
+                subtitle: '包含活動、住宿、換宿、交通資訊'
+            }
+        }
+    }
 })

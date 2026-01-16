@@ -47,6 +47,26 @@ export default defineType({
             }]
         },
         {
+            name: 'introSlides',
+            title: '新村大門輪播圖 (Intro Slides)',
+            type: 'array',
+            of: [{
+                type: 'object',
+                name: 'introSlide',
+                fields: [
+                    { name: 'title', type: 'string', title: '標題' },
+                    { name: 'desc', type: 'text', title: '描述', rows: 2 },
+                    { name: 'image', type: 'image', title: '背景圖片', options: { hotspot: true } }
+                ],
+                preview: {
+                    select: {
+                        title: 'title',
+                        media: 'image'
+                    }
+                }
+            }]
+        },
+        {
             name: 'description',
             title: '描述',
             type: 'text',
