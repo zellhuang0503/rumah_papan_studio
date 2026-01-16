@@ -27,8 +27,29 @@ export default defineType({
         },
         {
             name: 'contactEmail',
-            title: '聯絡信箱',
+            title: '聯絡信箱 (Email)',
             type: 'string',
+        },
+        {
+            name: 'subtitle',
+            title: '網站副標題 (Footer)',
+            type: 'string',
+        },
+        {
+            name: 'phone',
+            title: '聯絡電話',
+            type: 'string',
+        },
+        {
+            name: 'serviceRegion',
+            title: '服務區域',
+            type: 'string',
+        },
+        {
+            name: 'address',
+            title: '地址',
+            type: 'text',
+            rows: 2,
         },
         {
             name: 'socialLinks',
