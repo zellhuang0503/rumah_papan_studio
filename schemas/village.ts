@@ -233,6 +233,46 @@ export default defineType({
                     }]
                 }
             ]
+        },
+
+        // --- 5. 觀光地圖 (Map) ---
+        {
+            name: 'map',
+            title: '觀光地圖頁面',
+            type: 'object',
+            fields: [
+                { name: 'title', type: 'string', title: '標題 (中文)' },
+                { name: 'title_en', type: 'string', title: 'Title (English)' },
+                { name: 'subtitle', type: 'string', title: '副標題 (中文)' },
+                { name: 'subtitle_en', type: 'string', title: 'Subtitle (English)' },
+                {
+                    name: 'locations',
+                    title: '景點列表',
+                    type: 'array',
+                    of: [{
+                        type: 'object',
+                        fields: [
+                            { name: 'id', type: 'string', title: 'ID' },
+                            { name: 'name', type: 'string', title: '名稱 (中文)' },
+                            { name: 'name_en', type: 'string', title: 'Name (English)' },
+                            { name: 'subName', type: 'string', title: '副名稱/店名 (中文)' },
+                            { name: 'subName_en', type: 'string', title: 'Sub Name (English)' },
+                            { name: 'address', type: 'string', title: '地址 (中文)' },
+                            { name: 'address_en', type: 'string', title: 'Address (English)' },
+                            { name: 'category', type: 'string', title: '分類', options: { list: ['food', 'temple', 'attraction'] } },
+                            { name: 'featureTitle', type: 'string', title: '特色標題 (中文)' },
+                            { name: 'featureTitle_en', type: 'string', title: 'Feature Title (English)' },
+                            { name: 'featureDescription', type: 'array', title: '特色描述 (中文)', of: [{ type: 'string' }] },
+                            { name: 'featureDescription_en', type: 'array', title: 'Feature Description (English)', of: [{ type: 'string' }] },
+                            { name: 'distanceInfo', type: 'string', title: '距離資訊 (中文)' },
+                            { name: 'distanceInfo_en', type: 'string', title: 'Distance Info (English)' },
+                            { name: 'coordinateX', type: 'number', title: 'X 座標 (%)' },
+                            { name: 'coordinateY', type: 'number', title: 'Y 座標 (%)' },
+                            { name: 'image', type: 'image', title: '圖片' }
+                        ]
+                    }]
+                }
+            ]
         }
     ],
     preview: {

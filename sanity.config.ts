@@ -23,7 +23,7 @@ export default defineConfig({
                     title: '最近編輯 (Recent Edits)',
                     order: '_updatedAt desc',
                     limit: 10,
-                    types: ['about', 'village', 'story', 'contact'] // customize based on your schema types
+                    types: ['announcement', 'about', 'village', 'story', 'contact'] // customize based on your schema types
                 }),
                 projectInfoWidget(),
                 projectUsersWidget()
