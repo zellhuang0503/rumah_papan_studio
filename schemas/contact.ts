@@ -13,22 +13,42 @@ export default defineType({
         },
         {
             name: 'founderName',
-            title: '創辦人姓名',
+            title: '創辦人姓名 (中文)',
+            type: 'string',
+        },
+        {
+            name: 'founderName_en',
+            title: 'Founder Name (English)',
             type: 'string',
         },
         {
             name: 'founderBio',
-            title: '創辦人簡介',
+            title: '創辦人簡介 (中文)',
+            type: 'text',
+        },
+        {
+            name: 'founderBio_en',
+            title: 'Founder Bio (English)',
             type: 'text',
         },
         {
             name: 'founderTitle',
-            title: '創辦人稱謂 (如: 創辦人)',
+            title: '創辦人稱謂 (中文)',
+            type: 'string',
+        },
+        {
+            name: 'founderTitle_en',
+            title: 'Founder Title (English)',
             type: 'string',
         },
         {
             name: 'founderSubtitle',
-            title: '創辦人副標題 (如: 巴生·班達馬蘭新村人...)',
+            title: '創辦人副標題 (中文)',
+            type: 'string',
+        },
+        {
+            name: 'founderSubtitle_en',
+            title: 'Founder Subtitle (English)',
             type: 'string',
         },
         {
@@ -63,3 +83,4 @@ export default defineType({
         },
     ],
 })
+

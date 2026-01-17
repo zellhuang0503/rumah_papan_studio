@@ -2,18 +2,39 @@ import { defineType } from 'sanity'
 
 export default defineType({
     name: 'siteSettings',
-    title: '網站設定',
+    title: '網站設定 (Site Settings)',
     type: 'document',
     fields: [
         {
-            name: 'title',
-            title: '網站標題',
+            name: 'title_zh',
+            title: '網站標題 (中文)',
             type: 'string',
             validation: (Rule) => Rule.required(),
         },
         {
-            name: 'description',
-            title: '網站描述',
+            name: 'title_en',
+            title: 'Site Title (English)',
+            type: 'string',
+        },
+        {
+            name: 'subtitle_zh',
+            title: '網站副標題 (中文)',
+            type: 'string',
+        },
+        {
+            name: 'subtitle_en',
+            title: 'Subtitle (English)',
+            type: 'string',
+        },
+        {
+            name: 'description_zh',
+            title: '網站描述 (中文)',
+            type: 'text',
+            rows: 3,
+        },
+        {
+            name: 'description_en',
+            title: 'Description (English)',
             type: 'text',
             rows: 3,
         },
@@ -31,23 +52,29 @@ export default defineType({
             type: 'string',
         },
         {
-            name: 'subtitle',
-            title: '網站副標題 (Footer)',
-            type: 'string',
-        },
-        {
             name: 'phone',
             title: '聯絡電話',
             type: 'string',
         },
         {
-            name: 'serviceRegion',
-            title: '服務區域',
+            name: 'serviceRegion_zh',
+            title: '服務區域 (中文)',
             type: 'string',
         },
         {
-            name: 'address',
-            title: '地址',
+            name: 'serviceRegion_en',
+            title: 'Service Region (English)',
+            type: 'string',
+        },
+        {
+            name: 'address_zh',
+            title: '地址 (中文)',
+            type: 'text',
+            rows: 2,
+        },
+        {
+            name: 'address_en',
+            title: 'Address (English)',
             type: 'text',
             rows: 2,
         },

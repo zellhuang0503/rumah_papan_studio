@@ -11,7 +11,8 @@ export default defineType({
             title: '活動體驗頁面',
             type: 'object',
             fields: [
-                { name: 'heroTitle', type: 'string', title: 'Hero標題' },
+                { name: 'heroTitle', type: 'string', title: 'Hero標題 (中文)' },
+                { name: 'heroTitle_en', type: 'string', title: 'Hero Title (English)' },
                 {
                     name: 'items',
                     title: '活動項目',
@@ -19,8 +20,10 @@ export default defineType({
                     of: [{
                         type: 'object',
                         fields: [
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'desc', type: 'text', title: '描述' },
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'desc', type: 'text', title: '描述 (中文)' },
+                            { name: 'desc_en', type: 'text', title: 'Description (English)' },
                             { name: 'image', type: 'image', title: '圖片' }
                         ]
                     }]
@@ -30,8 +33,10 @@ export default defineType({
                     title: '引言',
                     type: 'object',
                     fields: [
-                        { name: 'title', type: 'string', title: '標題' },
-                        { name: 'desc', type: 'text', title: '內容' }
+                        { name: 'title', type: 'string', title: '標題 (中文)' },
+                        { name: 'title_en', type: 'string', title: 'Title (English)' },
+                        { name: 'desc', type: 'text', title: '內容 (中文)' },
+                        { name: 'desc_en', type: 'text', title: 'Content (English)' }
                     ]
                 },
                 {
@@ -42,8 +47,10 @@ export default defineType({
                         type: 'object',
                         fields: [
                             { name: 'id', type: 'string', title: '編號' },
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'desc', type: 'text', title: '內容' }
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'desc', type: 'text', title: '內容 (中文)' },
+                            { name: 'desc_en', type: 'text', title: 'Content (English)' }
                         ]
                     }]
                 }
@@ -56,7 +63,8 @@ export default defineType({
             title: '住宿體驗頁面',
             type: 'object',
             fields: [
-                { name: 'heroTitle', type: 'string', title: 'Hero標題' },
+                { name: 'heroTitle', type: 'string', title: 'Hero標題 (中文)' },
+                { name: 'heroTitle_en', type: 'string', title: 'Hero Title (English)' },
                 {
                     name: 'rooms',
                     title: '房型介紹',
@@ -64,8 +72,10 @@ export default defineType({
                     of: [{
                         type: 'object',
                         fields: [
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'desc', type: 'text', title: '描述' },
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'desc', type: 'text', title: '描述 (中文)' },
+                            { name: 'desc_en', type: 'text', title: 'Description (English)' },
                             { name: 'image', type: 'image', title: '圖片' }
                         ]
                     }]
@@ -75,8 +85,10 @@ export default defineType({
                     title: '引言',
                     type: 'object',
                     fields: [
-                        { name: 'title', type: 'string', title: '標題' },
-                        { name: 'desc', type: 'text', title: '內容' }
+                        { name: 'title', type: 'string', title: '標題 (中文)' },
+                        { name: 'title_en', type: 'string', title: 'Title (English)' },
+                        { name: 'desc', type: 'text', title: '內容 (中文)' },
+                        { name: 'desc_en', type: 'text', title: 'Content (English)' }
                     ]
                 },
                 {
@@ -84,8 +96,10 @@ export default defineType({
                     title: '預約區塊',
                     type: 'object',
                     fields: [
-                        { name: 'title', type: 'string', title: '標題' },
-                        { name: 'button', type: 'string', title: '按鈕文字' }
+                        { name: 'title', type: 'string', title: '標題 (中文)' },
+                        { name: 'title_en', type: 'string', title: 'Title (English)' },
+                        { name: 'button', type: 'string', title: '按鈕文字 (中文)' },
+                        { name: 'button_en', type: 'string', title: 'Button Text (English)' }
                     ]
                 },
                 {
@@ -96,8 +110,10 @@ export default defineType({
                         type: 'object',
                         fields: [
                             { name: 'id', type: 'string', title: '編號' },
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'desc', type: 'text', title: '內容' }
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'desc', type: 'text', title: '內容 (中文)' },
+                            { name: 'desc_en', type: 'text', title: 'Content (English)' }
                         ]
                     }]
                 }
@@ -110,7 +126,8 @@ export default defineType({
             title: '技能換宿頁面',
             type: 'object',
             fields: [
-                { name: 'heroTitle', type: 'string', title: 'Hero標題' },
+                { name: 'heroTitle', type: 'string', title: 'Hero標題 (中文)' },
+                { name: 'heroTitle_en', type: 'string', title: 'Hero Title (English)' },
                 {
                     name: 'items',
                     title: '換宿內容',
@@ -118,8 +135,10 @@ export default defineType({
                     of: [{
                         type: 'object',
                         fields: [
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'desc', type: 'text', title: '描述' },
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'desc', type: 'text', title: '描述 (中文)' },
+                            { name: 'desc_en', type: 'text', title: 'Description (English)' },
                             { name: 'image', type: 'image', title: '圖片' }
                         ]
                     }]
@@ -129,8 +148,10 @@ export default defineType({
                     title: '引言',
                     type: 'object',
                     fields: [
-                        { name: 'title', type: 'string', title: '標題' },
-                        { name: 'desc', type: 'text', title: '內容' }
+                        { name: 'title', type: 'string', title: '標題 (中文)' },
+                        { name: 'title_en', type: 'string', title: 'Title (English)' },
+                        { name: 'desc', type: 'text', title: '內容 (中文)' },
+                        { name: 'desc_en', type: 'text', title: 'Content (English)' }
                     ]
                 },
                 {
@@ -138,8 +159,10 @@ export default defineType({
                     title: '預約區塊',
                     type: 'object',
                     fields: [
-                        { name: 'title', type: 'string', title: '標題' },
-                        { name: 'button', type: 'string', title: '按鈕文字' }
+                        { name: 'title', type: 'string', title: '標題 (中文)' },
+                        { name: 'title_en', type: 'string', title: 'Title (English)' },
+                        { name: 'button', type: 'string', title: '按鈕文字 (中文)' },
+                        { name: 'button_en', type: 'string', title: 'Button Text (English)' }
                     ]
                 },
                 {
@@ -150,8 +173,10 @@ export default defineType({
                         type: 'object',
                         fields: [
                             { name: 'id', type: 'string', title: '編號' },
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'desc', type: 'text', title: '內容' }
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'desc', type: 'text', title: '內容 (中文)' },
+                            { name: 'desc_en', type: 'text', title: 'Content (English)' }
                         ]
                     }]
                 }
@@ -164,13 +189,15 @@ export default defineType({
             title: '交通方式頁面',
             type: 'object',
             fields: [
-                { name: 'heroTitle', type: 'string', title: 'Hero標題' },
+                { name: 'heroTitle', type: 'string', title: 'Hero標題 (中文)' },
+                { name: 'heroTitle_en', type: 'string', title: 'Hero Title (English)' },
                 {
                     name: 'map',
                     title: '地圖資訊',
                     type: 'object',
                     fields: [
-                        { name: 'address', type: 'string', title: '地址' },
+                        { name: 'address', type: 'string', title: '地址 (中文)' },
+                        { name: 'address_en', type: 'string', title: 'Address (English)' },
                         { name: 'googleMapLink', type: 'url', title: 'Google Map 連結' }
                     ]
                 },
@@ -181,9 +208,12 @@ export default defineType({
                     of: [{
                         type: 'object',
                         fields: [
-                            { name: 'type', type: 'string', title: '類型 (機場/車站...)' },
-                            { name: 'title', type: 'string', title: '標題' },
-                            { name: 'note', type: 'string', title: '備註' },
+                            { name: 'type', type: 'string', title: '類型 (中文)' },
+                            { name: 'type_en', type: 'string', title: 'Type (English)' },
+                            { name: 'title', type: 'string', title: '標題 (中文)' },
+                            { name: 'title_en', type: 'string', title: 'Title (English)' },
+                            { name: 'note', type: 'string', title: '備註 (中文)' },
+                            { name: 'note_en', type: 'string', title: 'Note (English)' },
                             {
                                 name: 'steps',
                                 title: '步驟',
@@ -192,8 +222,10 @@ export default defineType({
                                     type: 'object',
                                     fields: [
                                         { name: 'id', type: 'string', title: '編號' },
-                                        { name: 'action', type: 'string', title: '動作' },
-                                        { name: 'desc', type: 'text', title: '描述' }
+                                        { name: 'action', type: 'string', title: '動作 (中文)' },
+                                        { name: 'action_en', type: 'string', title: 'Action (English)' },
+                                        { name: 'desc', type: 'text', title: '描述 (中文)' },
+                                        { name: 'desc_en', type: 'text', title: 'Description (English)' }
                                     ]
                                 }]
                             }
@@ -212,3 +244,4 @@ export default defineType({
         }
     }
 })
+

@@ -7,9 +7,14 @@ export default defineType({
     fields: [
         {
             name: 'title',
-            title: '頁面標題',
+            title: '頁面標題 (中文)',
             type: 'string',
             validation: (Rule) => Rule.required(),
+        },
+        {
+            name: 'title_en',
+            title: 'Page Title (English)',
+            type: 'string',
         },
         {
             name: 'heroImage',
@@ -27,9 +32,12 @@ export default defineType({
                 type: 'object',
                 fields: [
                     { name: 'key', type: 'string', title: '識別碼(ID)', description: '例如: about, bkt' },
-                    { name: 'title', type: 'string', title: '標題' },
-                    { name: 'body', type: 'text', title: '內文', rows: 3 },
-                    { name: 'bubbleText', type: 'string', title: '氣泡按鈕文字' },
+                    { name: 'title', type: 'string', title: '標題 (中文)' },
+                    { name: 'title_en', type: 'string', title: 'Title (English)' },
+                    { name: 'body', type: 'text', title: '內文 (中文)', rows: 3 },
+                    { name: 'body_en', type: 'text', title: 'Body (English)', rows: 3 },
+                    { name: 'bubbleText', type: 'string', title: '氣泡按鈕文字 (中文)' },
+                    { name: 'bubbleText_en', type: 'string', title: 'Bubble Text (English)' },
                     { name: 'isLarge', type: 'boolean', title: '大尺寸氣泡?', initialValue: false },
                     {
                         name: 'image',
@@ -54,8 +62,10 @@ export default defineType({
                 type: 'object',
                 name: 'introSlide',
                 fields: [
-                    { name: 'title', type: 'string', title: '標題' },
-                    { name: 'desc', type: 'text', title: '描述', rows: 2 },
+                    { name: 'title', type: 'string', title: '標題 (中文)' },
+                    { name: 'title_en', type: 'string', title: 'Title (English)' },
+                    { name: 'desc', type: 'text', title: '描述 (中文)', rows: 2 },
+                    { name: 'desc_en', type: 'text', title: 'Description (English)', rows: 2 },
                     { name: 'image', type: 'image', title: '背景圖片', options: { hotspot: true } }
                 ],
                 preview: {
@@ -68,7 +78,13 @@ export default defineType({
         },
         {
             name: 'description',
-            title: '描述',
+            title: '描述 (中文)',
+            type: 'text',
+            rows: 4,
+        },
+        {
+            name: 'description_en',
+            title: 'Description (English)',
             type: 'text',
             rows: 4,
         },
@@ -80,3 +96,4 @@ export default defineType({
         },
     ],
 })
+
