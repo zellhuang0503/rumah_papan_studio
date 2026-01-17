@@ -2,7 +2,7 @@ import { defineType } from 'sanity'
 
 export default defineType({
     name: 'story',
-    title: '故事 (Stories)',
+    title: '故事誌',
     type: 'document',
     fields: [
         {

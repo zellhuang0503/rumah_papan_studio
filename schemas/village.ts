@@ -2,7 +2,7 @@ import { defineType } from 'sanity'
 
 export default defineType({
     name: 'village',
-    title: '村落',
+    title: '走進新村',
     type: 'document',
     fields: [
         // --- 1. 活動體驗 (Activities) ---

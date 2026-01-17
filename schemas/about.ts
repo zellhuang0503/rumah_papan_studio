@@ -2,7 +2,7 @@ import { defineType } from 'sanity'
 
 export default defineType({
     name: 'about',
-    title: '關於我們',
+    title: '關於班厝',
     type: 'document',
     fields: [
         {
