@@ -245,6 +245,7 @@ export default defineType({
                 { name: 'title_en', type: 'string', title: 'Title (English)' },
                 { name: 'subtitle', type: 'string', title: '副標題 (中文)' },
                 { name: 'subtitle_en', type: 'string', title: 'Subtitle (English)' },
+                { name: 'mapImage', type: 'image', title: '全區地圖底圖', description: '上傳一張班厝景點地圖的底圖' },
                 {
                     name: 'locations',
                     title: '景點列表',
@@ -268,6 +269,8 @@ export default defineType({
                             { name: 'distanceInfo_en', type: 'string', title: 'Distance Info (English)' },
                             { name: 'coordinateX', type: 'number', title: 'X 座標 (%)' },
                             { name: 'coordinateY', type: 'number', title: 'Y 座標 (%)' },
+                            { name: 'phone', type: 'string', title: '聯絡電話' },
+                            { name: 'googleMapLink', type: 'url', title: 'Google Map 連結' },
                             { name: 'image', type: 'image', title: '圖片' }
                         ]
                     }]
