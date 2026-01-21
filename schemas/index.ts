@@ -5,5 +5,6 @@ import story from './story'
 import siteSettings from './siteSettings'
 import contact from './contact'
 import announcement from './announcement'
+import booking from './booking'
 
-export const schemaTypes = [home, about, village, story, siteSettings, contact, announcement]
+export const schemaTypes = [home, about, village, story, siteSettings, contact, announcement, booking]
