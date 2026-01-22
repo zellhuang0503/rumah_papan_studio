@@ -10,7 +10,7 @@ export default defineConfig({
     name: 'default',
     title: 'Rumah Papan Klang',
 
-    projectId: 'pt01rhvf',
+    projectId: 'vm3p10fe',
     dataset: 'production',
 
     plugins: [
